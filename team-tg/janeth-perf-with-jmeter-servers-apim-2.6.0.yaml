@@ -10,15 +10,15 @@ infrastructureConfig:
     - ORACLE_JDK8
   provisioners:
     - name: single-node-deployment
-      remoteRepository: "git@github.com:janethavi/aws-apim.git"
-      remoteBranch: "performance-testgrid"
+      remoteRepository: "git@github.com:janethavi/performance-common"
+      remoteBranch: "testgrid"
       description: Provision Infra for running scenario tests
       scripts:
         # Deployment of apim pattern-1 + JMeter
         - name: 'prod-wso2-apim-perf-deployment'
           description: ''
           type: CLOUDFORMATION
-          file: jmeter-deployment-nested.yaml
+          file: distribution/scripts/cloudformation/templates/jmeter-deployment.yaml
           inputParameters:
             ProductDeploymentURL: "https://performance-test-archives.s3.us-east-2.amazonaws.com/pattern-1.yaml"
             ProductInstanceType: "t2.medium"
