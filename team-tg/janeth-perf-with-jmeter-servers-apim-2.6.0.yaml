@@ -34,7 +34,7 @@ infrastructureConfig:
             NumberOfJMeterServers: "0"
 scenarioConfigs:
   - testType: JMETER
-    remoteRepository: "git@github.com:janethavi/performance-apim.git"
+    remoteRepository: "https://github.com/wso2-enterprise/testgrid-performance-apim.git"
     remoteBranch: "test-grid"
     name: "apim-perf-test"
     description: "apim-scenarios"
