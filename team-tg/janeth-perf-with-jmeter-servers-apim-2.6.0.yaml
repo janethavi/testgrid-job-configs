@@ -10,7 +10,7 @@ infrastructureConfig:
     - ORACLE_JDK8
   provisioners:
     - name: single-node-deployment
-      remoteRepository: "git@github.com:janethavi/performance-common"
+      remoteRepository: "git@github.com:wso2-enterprise/testgrid-performance-common.git"
       remoteBranch: "test-grid"
       description: Provision Infra for running scenario tests
       scripts:
