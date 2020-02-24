@@ -11,7 +11,7 @@ infrastructureConfig:
   provisioners:
     - name: single-node-deployment
       remoteRepository: "git@github.com:wso2-enterprise/testgrid-performance-common.git"
-      remoteBranch: "test-grid"
+      remoteBranch: "master"
       description: Provision Infra for running scenario tests
       scripts:
         # Deployment of apim pattern-1 + JMeter
