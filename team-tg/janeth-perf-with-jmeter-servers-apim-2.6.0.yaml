@@ -20,7 +20,7 @@ infrastructureConfig:
           type: CLOUDFORMATION
           file: distribution/scripts/cloudformation/templates/jmeter-deployment.yaml
           inputParameters:
-            ProductDeploymentURL: "https://performance-test-archives.s3.us-east-2.amazonaws.com/pattern-2.yaml"
+            ProductDeploymentURL: "https://performance-test-archives.s3.us-east-2.amazonaws.com/pattern-1.yaml"
             ProductInstanceType: "t2.medium"
             ProductDBType: "db.t2.medium"
             CertificateName: "self-signed-cert"
