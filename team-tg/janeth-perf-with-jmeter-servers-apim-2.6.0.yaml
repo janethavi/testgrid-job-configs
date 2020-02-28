@@ -11,7 +11,7 @@ infrastructureConfig:
   provisioners:
     - name: single-node-deployment
       remoteRepository: "git@github.com:janethavi/testgrid-performance-common"
-      remoteBranch: "dev"
+      remoteBranch: "testing"
       description: Provision Infra for running scenario tests
       scripts:
         # Deployment of apim pattern-1 + JMeter
@@ -27,9 +27,9 @@ infrastructureConfig:
             DBUsername: "wso2carbon"
             DBPassword: "DB_Password"
             region: "us-east-2"
-            BackendInstanceType: "t2.medium"
-            JmeterClientInstanceType: "t2.medium"
-            JmeterServerInstanceType: "t2.medium"
+            BackendInstanceType: "t3.small"
+            JmeterClientInstanceType: "t3.small"
+            JmeterServerInstanceType: "t3.small"
             # Please use 2 Jmeter-servers if concurrency > 500 users
             NumberOfJMeterServers: "0"
 scenarioConfigs:
