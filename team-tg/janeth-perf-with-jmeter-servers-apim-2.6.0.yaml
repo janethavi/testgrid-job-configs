@@ -35,7 +35,7 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: JMETER
     remoteRepository: "git@github.com:janethavi/testgrid-performance-apim"
-    remoteBranch: "dev"
+    remoteBranch: "testing"
     name: "apim-perf-test"
     description: "apim-scenarios"
     file: distribution/scripts/scenario-test.sh
