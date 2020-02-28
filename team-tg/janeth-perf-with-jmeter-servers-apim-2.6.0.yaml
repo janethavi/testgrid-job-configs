@@ -11,7 +11,7 @@ infrastructureConfig:
   provisioners:
     - name: single-node-deployment
       remoteRepository: "git@github.com:janethavi/testgrid-performance-common"
-      remoteBranch: "master"
+      remoteBranch: "dev"
       description: Provision Infra for running scenario tests
       scripts:
         # Deployment of apim pattern-1 + JMeter
@@ -35,7 +35,7 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: JMETER
     remoteRepository: "git@github.com:janethavi/testgrid-performance-apim"
-    remoteBranch: "master"
+    remoteBranch: "dev"
     name: "apim-perf-test"
     description: "apim-scenarios"
     file: distribution/scripts/scenario-test.sh
