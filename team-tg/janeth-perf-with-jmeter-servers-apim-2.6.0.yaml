@@ -27,9 +27,9 @@ infrastructureConfig:
             DBUsername: "wso2carbon"
             DBPassword: "DB_Password"
             region: "us-east-2"
-            BackendInstanceType: "t3.small"
-            JmeterClientInstanceType: "t3.small"
-            JmeterServerInstanceType: "t3.small"
+            BackendInstanceType: "t2.medium"
+            JmeterClientInstanceType: "t2.medium"
+            JmeterServerInstanceType: "t2.medium"
             # Please use 2 Jmeter-servers if concurrency > 500 users
             NumberOfJMeterServers: "0"
 scenarioConfigs:
