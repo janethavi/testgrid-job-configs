@@ -10,8 +10,8 @@ infrastructureConfig:
     - ORACLE_JDK8
   provisioners:
     - name: single-node-deployment
-      remoteRepository: "git@github.com:janethavi/testgrid-performance-common"
-      remoteBranch: "testing"
+      remoteRepository: "git@github.com:wso2-enterprise/testgrid-performance-common"
+      remoteBranch: "master"
       description: Provision Infra for running scenario tests
       scripts:
         # Deployment of apim pattern-1 + JMeter
@@ -34,8 +34,8 @@ infrastructureConfig:
             NumberOfJMeterServers: "0"
 scenarioConfigs:
   - testType: JMETER
-    remoteRepository: "git@github.com:janethavi/testgrid-performance-apim"
-    remoteBranch: "testing"
+    remoteRepository: "git@github.com:wso2-enterprise/testgrid-performance-apim"
+    remoteBranch: "master"
     name: "apim-perf-test"
     description: "apim-scenarios"
     file: distribution/scripts/scenario-test.sh
